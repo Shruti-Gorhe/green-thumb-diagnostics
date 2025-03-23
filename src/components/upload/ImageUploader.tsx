@@ -3,8 +3,8 @@ import { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { Upload, ImageIcon, X, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { toast } from '@/components/ui/sonner';
 import { Progress } from '@/components/ui/progress';
+import { toast } from 'sonner';
 
 interface ImageUploaderProps {
   onImageUploaded: (imageUrl: string) => void;
