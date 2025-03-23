@@ -4,6 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import { Button } from '@/components/ui/button';
+import { useLocation } from 'react-router-dom';
+import { toast } from 'sonner';
 
 interface TreatmentStep {
   title: string;
@@ -29,6 +31,10 @@ const DiagnosisResult = ({
   treatments,
   prevention
 }: DiagnosisResultProps) => {
+  const location = useLocation();
+  // Use the uploaded image if available from location state
+  const displayImage = location.state?.imageUrl || imageUrl;
+  
   const getSeverityColor = () => {
     switch (severity) {
       case 'low': return 'bg-green-500';
@@ -46,13 +52,18 @@ const DiagnosisResult = ({
       default: return <Info className="h-5 w-5 text-blue-500" />;
     }
   };
+  
+  const handleSaveToHistory = () => {
+    // In a real app, this would save to a database
+    toast.success('Result saved to history');
+  };
 
   return (
     <div className="w-full max-w-5xl mx-auto space-y-8 animate-fade-in-up">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="glass-card overflow-hidden">
           <img
-            src={imageUrl}
+            src={displayImage}
             alt={diseaseName}
             className="w-full h-80 object-cover object-center"
           />
@@ -89,7 +100,10 @@ const DiagnosisResult = ({
             
             <p className="text-muted-foreground text-sm">{description}</p>
             
-            <Button className="w-full bg-leaf-500 hover:bg-leaf-600 text-white">
+            <Button 
+              className="w-full bg-leaf-500 hover:bg-leaf-600 text-white"
+              onClick={handleSaveToHistory}
+            >
               Save to History
             </Button>
           </CardContent>

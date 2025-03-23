@@ -13,7 +13,16 @@ const Upload = () => {
     // In a real app, you would send the image to your backend for processing
     // Then navigate to results with the real ID
     setTimeout(() => {
-      navigate('/results/1');
+      // Generate a random ID to simulate different disease detections
+      const demoIds = [
+        'tomato', 'apple', 'grape', 'strawberry', 
+        'corn', 'potato', 'cucumber', 'citrus'
+      ];
+      const randomId = demoIds[Math.floor(Math.random() * demoIds.length)];
+      
+      navigate(`/results/${randomId}`, { 
+        state: { imageUrl } 
+      });
     }, 1500);
   };
 
