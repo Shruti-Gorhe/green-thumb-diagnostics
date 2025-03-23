@@ -1,4 +1,3 @@
-
 interface Treatment {
   title: string;
   description: string;
@@ -334,7 +333,7 @@ const diseaseDatabase: DiseaseInfo[] = [
       },
       { 
         title: 'Remove Infected Leaves', 
-        description: 'Remove and destroy severely affected leaves, though this won't cure existing infections.' 
+        description: 'Remove and destroy severely affected leaves, though this won\'t cure existing infections.' 
       },
       { 
         title: 'Nutrition Support', 
@@ -406,7 +405,7 @@ const diseaseDatabase: DiseaseInfo[] = [
     diseaseName: 'Pear Fire Blight',
     confidence: 95,
     severity: 'high',
-    description: 'Fire blight is a destructive bacterial disease affecting pears, apples, and related species. Infected branches appear scorched, with blackened leaves and stems that often curl into a "shepherd's crook."',
+    description: 'Fire blight is a destructive bacterial disease affecting pears, apples, and related species. Infected branches appear scorched, with blackened leaves and stems that often curl into a "shepherd\'s crook."',
     treatments: [
       { 
         title: 'Prune Infected Branches', 
