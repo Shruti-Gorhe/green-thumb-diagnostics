@@ -296,6 +296,278 @@ const diseaseDatabase: DiseaseInfo[] = [
       'Avoid planting near ornamentals that may harbor the virus',
       'Use insect screening in greenhouse production'
     ]
+  },
+  {
+    imageUrl: 'https://images.unsplash.com/photo-1580966668862-1a01bf5592e0?auto=format&fit=crop&w=800&q=80',
+    diseaseName: 'Apple Cedar Rust',
+    confidence: 91,
+    severity: 'medium',
+    description: 'Cedar apple rust is a fungal disease that requires both apple trees and cedar (juniper) trees to complete its life cycle. On apple trees, it causes bright orange-yellow spots on leaves and fruit.',
+    treatments: [
+      { 
+        title: 'Apply Fungicide', 
+        description: 'Apply protective fungicides in spring when spores are released from cedars.' 
+      },
+      { 
+        title: 'Remove Infected Leaves', 
+        description: 'Remove and destroy heavily infected leaves to reduce disease pressure.' 
+      }
+    ],
+    prevention: [
+      'Plant resistant apple varieties',
+      'Remove nearby cedar/juniper trees if possible',
+      'Apply preventative fungicides before infection occurs',
+      'Maintain good tree health through proper nutrition',
+      'Ensure adequate spacing between trees'
+    ]
+  },
+  {
+    imageUrl: 'https://images.unsplash.com/photo-1595591397918-7658b8bf6c4c?auto=format&fit=crop&w=800&q=80',
+    diseaseName: 'Peach Leaf Curl',
+    confidence: 93,
+    severity: 'medium',
+    description: 'Peach leaf curl is a fungal disease that affects peach, nectarine, and related trees. Infected leaves become thickened, puckered, and curled, often with a red or purple discoloration.',
+    treatments: [
+      { 
+        title: 'Apply Dormant Spray', 
+        description: 'Apply copper-based or sulfur fungicides during the dormant season before bud break.' 
+      },
+      { 
+        title: 'Remove Infected Leaves', 
+        description: 'Remove and destroy severely affected leaves, though this won't cure existing infections.' 
+      },
+      { 
+        title: 'Nutrition Support', 
+        description: 'Provide appropriate fertilization to help trees recover from infection.' 
+      }
+    ],
+    prevention: [
+      'Apply fungicide in late fall after leaf drop',
+      'Apply another fungicide spray before bud swell in spring',
+      'Plant resistant varieties when possible',
+      'Ensure adequate spacing and pruning for air circulation',
+      'Maintain overall tree health through proper care'
+    ]
+  },
+  {
+    imageUrl: 'https://images.unsplash.com/photo-1592588253414-da7b0617bed9?auto=format&fit=crop&w=800&q=80',
+    diseaseName: 'Rose Black Spot',
+    confidence: 89,
+    severity: 'medium',
+    description: 'Black spot is one of the most common and serious diseases of roses. It causes black or dark purple spots on leaves, which eventually yellow and drop. Severe infections can defoliate plants.',
+    treatments: [
+      { 
+        title: 'Remove Infected Leaves', 
+        description: 'Promptly remove and destroy infected leaves, both on the plant and fallen leaves.' 
+      },
+      { 
+        title: 'Apply Fungicide', 
+        description: 'Apply preventative fungicides regularly during the growing season, especially before and during wet periods.' 
+      },
+      { 
+        title: 'Improve Air Circulation', 
+        description: 'Prune the center of the plant to improve air circulation and reduce humidity.' 
+      }
+    ],
+    prevention: [
+      'Plant resistant rose varieties',
+      'Water at the base of plants, avoiding leaf wetness',
+      'Space plants properly for good air flow',
+      'Clean up and destroy all fallen leaves in fall',
+      'Apply preventative fungicide early in the season'
+    ]
+  },
+  {
+    imageUrl: 'https://images.unsplash.com/photo-1598017094162-a879b3d45d90?auto=format&fit=crop&w=800&q=80',
+    diseaseName: 'Cherry Leaf Spot',
+    confidence: 87,
+    severity: 'medium',
+    description: 'Cherry leaf spot is a fungal disease that affects cherry trees, causing purple-red spots on leaves that later turn brown. Severe infections can cause premature leaf drop, weakening trees over time.',
+    treatments: [
+      { 
+        title: 'Apply Fungicide', 
+        description: 'Apply fungicides starting at petal fall and continuing at recommended intervals.' 
+      },
+      { 
+        title: 'Remove Fallen Leaves', 
+        description: 'Clean up and destroy fallen leaves, which harbor the fungus over winter.' 
+      }
+    ],
+    prevention: [
+      'Plant resistant cherry varieties when possible',
+      'Ensure good air circulation through proper pruning',
+      'Avoid overhead irrigation',
+      'Apply preventative fungicides before rainy periods',
+      'Maintain tree vigor through proper fertilization'
+    ]
+  },
+  {
+    imageUrl: 'https://images.unsplash.com/photo-1584905184481-77c7e4e631f9?auto=format&fit=crop&w=800&q=80',
+    diseaseName: 'Pear Fire Blight',
+    confidence: 95,
+    severity: 'high',
+    description: 'Fire blight is a destructive bacterial disease affecting pears, apples, and related species. Infected branches appear scorched, with blackened leaves and stems that often curl into a "shepherd's crook."',
+    treatments: [
+      { 
+        title: 'Prune Infected Branches', 
+        description: 'Cut infected branches at least 12 inches below visible symptoms, disinfecting tools between cuts.' 
+      },
+      { 
+        title: 'Apply Bactericide', 
+        description: 'Apply copper-based bactericides during bloom period according to label directions.' 
+      },
+      { 
+        title: 'Avoid Nitrogen Fertilizer', 
+        description: 'Limit nitrogen fertilizer, which promotes susceptible succulent growth.' 
+      }
+    ],
+    prevention: [
+      'Plant resistant varieties',
+      'Avoid heavy pruning which stimulates vigorous, susceptible growth',
+      'Apply preventative sprays during bloom',
+      'Maintain balanced nutrition',
+      'Remove nearby wild hosts of the disease'
+    ]
+  },
+  {
+    imageUrl: 'https://images.unsplash.com/photo-1601493700661-89b4bae16248?auto=format&fit=crop&w=800&q=80',
+    diseaseName: 'Blueberry Anthracnose',
+    confidence: 88,
+    severity: 'medium',
+    description: 'Anthracnose is a fungal disease affecting blueberries, causing orange spore masses on fruit and sunken lesions that lead to fruit rot. It can also affect stems and leaves.',
+    treatments: [
+      { 
+        title: 'Apply Fungicide', 
+        description: 'Apply recommended fungicides from bud break through harvest at appropriate intervals.' 
+      },
+      { 
+        title: 'Prune for Air Circulation', 
+        description: 'Prune bushes to improve air flow and reduce humidity that favors disease development.' 
+      },
+      { 
+        title: 'Harvest Promptly', 
+        description: 'Harvest ripe fruit promptly and carefully to avoid spreading spores.' 
+      }
+    ],
+    prevention: [
+      'Plant resistant varieties',
+      'Space plants properly for good air circulation',
+      'Use drip irrigation rather than overhead watering',
+      'Apply preventative fungicides before wet periods',
+      'Remove and destroy infected plant material'
+    ]
+  },
+  {
+    imageUrl: 'https://images.unsplash.com/photo-1596100277423-9f41c9153655?auto=format&fit=crop&w=800&q=80',
+    diseaseName: 'Squash Powdery Mildew',
+    confidence: 90,
+    severity: 'medium',
+    description: 'Powdery mildew is a common fungal disease of squash and other cucurbits, causing white powdery spots on leaves and stems. It can reduce photosynthesis and eventually lead to premature leaf death.',
+    treatments: [
+      { 
+        title: 'Apply Fungicide', 
+        description: 'Apply potassium bicarbonate, sulfur, or other approved fungicides at first sign of disease.' 
+      },
+      { 
+        title: 'Milk Spray', 
+        description: 'Apply a spray of 1 part milk to 9 parts water weekly as an organic treatment.' 
+      },
+      { 
+        title: 'Remove Severely Infected Leaves', 
+        description: 'Remove the worst affected leaves to slow disease spread.' 
+      }
+    ],
+    prevention: [
+      'Plant resistant varieties',
+      'Space plants properly for good air circulation',
+      'Avoid overhead irrigation',
+      'Apply preventative treatments before symptoms appear',
+      'Plant in full sun locations'
+    ]
+  },
+  {
+    imageUrl: 'https://images.unsplash.com/photo-1582730147924-d3fd5e2132bd?auto=format&fit=crop&w=800&q=80',
+    diseaseName: 'Cabbage Black Rot',
+    confidence: 92,
+    severity: 'high',
+    description: 'Black rot is a bacterial disease affecting cabbage and related crops. It causes V-shaped yellow to brown lesions on leaf margins that progress inward, and blackening of leaf veins.',
+    treatments: [
+      { 
+        title: 'Remove Infected Plants', 
+        description: 'Remove and destroy severely infected plants to prevent spread.' 
+      },
+      { 
+        title: 'Apply Copper Spray', 
+        description: 'Apply copper-based bactericides early in disease development.' 
+      },
+      { 
+        title: 'Avoid Working When Wet', 
+        description: 'Do not work with plants when they are wet to avoid spreading bacteria.' 
+      }
+    ],
+    prevention: [
+      'Use disease-free seeds or transplants',
+      'Rotate crops for at least 2 years',
+      'Control cruciferous weeds that can harbor the disease',
+      'Avoid overhead irrigation',
+      'Clean and disinfect tools and equipment'
+    ]
+  },
+  {
+    imageUrl: 'https://images.unsplash.com/photo-1617692855027-33b14f061079?auto=format&fit=crop&w=800&q=80',
+    diseaseName: 'Bean Rust',
+    confidence: 89,
+    severity: 'medium',
+    description: 'Bean rust is a fungal disease causing small, rusty-brown pustules on leaf undersides. Severe infections can cause premature leaf drop and significantly reduce yields.',
+    treatments: [
+      { 
+        title: 'Apply Fungicide', 
+        description: 'Apply sulfur or other approved fungicides at first sign of disease.' 
+      },
+      { 
+        title: 'Remove Infected Leaves', 
+        description: 'Remove heavily infected leaves to reduce spore production.' 
+      },
+      { 
+        title: 'Improve Air Circulation', 
+        description: 'Ensure adequate spacing between plants to reduce humidity.' 
+      }
+    ],
+    prevention: [
+      'Plant resistant varieties',
+      'Rotate crops annually',
+      'Avoid working with plants when wet',
+      'Space plants properly',
+      'Destroy plant debris after harvest'
+    ]
+  },
+  {
+    imageUrl: 'https://images.unsplash.com/photo-1600995616333-171e945b6929?auto=format&fit=crop&w=800&q=80',
+    diseaseName: 'Lettuce Downy Mildew',
+    confidence: 91,
+    severity: 'high',
+    description: 'Downy mildew is a destructive disease of lettuce, causing yellow patches on leaf surfaces and grayish-white fungal growth on leaf undersides. It thrives in cool, wet conditions.',
+    treatments: [
+      { 
+        title: 'Apply Fungicide', 
+        description: 'Apply appropriate fungicides preventatively when conditions favor disease.' 
+      },
+      { 
+        title: 'Remove Infected Plants', 
+        description: 'Remove and destroy infected plants to prevent spread.' 
+      },
+      { 
+        title: 'Improve Air Circulation', 
+        description: 'Thin plants to improve air flow and reduce humidity.' 
+      }
+    ],
+    prevention: [
+      'Plant resistant varieties',
+      'Avoid overhead irrigation',
+      'Water early in the day',
+      'Ensure good drainage',
+      'Rotate crops for at least 2 years'
+    ]
   }
 ];
 

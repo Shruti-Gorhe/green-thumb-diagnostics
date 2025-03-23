@@ -16,7 +16,10 @@ const Upload = () => {
       // Generate a random ID to simulate different disease detections
       const demoIds = [
         'tomato', 'apple', 'grape', 'strawberry', 
-        'corn', 'potato', 'cucumber', 'citrus'
+        'corn', 'potato', 'cucumber', 'citrus',
+        'peach', 'rose', 'cherry', 'pear',
+        'blueberry', 'squash', 'cabbage', 'bean',
+        'lettuce'
       ];
       const randomId = demoIds[Math.floor(Math.random() * demoIds.length)];
       

@@ -4,6 +4,7 @@ import Layout from '@/components/Layout';
 import DiagnosisResult from '@/components/results/DiagnosisResult';
 import { useState, useEffect } from 'react';
 import { getDisease } from '@/utils/diseaseDetection';
+import { toast } from 'sonner';
 
 const Results = () => {
   const { id } = useParams();
@@ -27,9 +28,16 @@ const Results = () => {
         // In a real app, this would be the result from your ML model
         const detectedDisease = getDisease(id);
         
+        // If we have an uploaded image, use that instead of the stock image
+        if (uploadedImage) {
+          detectedDisease.imageUrl = uploadedImage;
+        }
+        
         setResultData(detectedDisease);
+        toast.success(`Disease identified: ${detectedDisease.diseaseName}`);
       } catch (error) {
         console.error('Error fetching results:', error);
+        toast.error('Error analyzing image. Please try again.');
       } finally {
         setLoading(false);
       }
